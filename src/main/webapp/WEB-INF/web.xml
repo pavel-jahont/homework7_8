@@ -4,4 +4,54 @@
 
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
+
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+  </welcome-file-list>
+
+  <servlet>
+    <servlet-name>InitServlet</servlet-name>
+    <servlet-class>com.gmail.jahont.pavel.app.controller.InitServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>InitServlet</servlet-name>
+    <url-pattern>/index</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>ShowUserServlet</servlet-name>
+    <servlet-class>com.gmail.jahont.pavel.app.controller.ShowUserServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ShowUserServlet</servlet-name>
+    <url-pattern>/showUser</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>AddUserServlet</servlet-name>
+    <servlet-class>com.gmail.jahont.pavel.app.controller.AddUserServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AddUserServlet</servlet-name>
+    <url-pattern>/addUser</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>UpdateUserAddressServlet</servlet-name>
+    <servlet-class>com.gmail.jahont.pavel.app.controller.UpdateUserAddressServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UpdateUserAddressServlet</servlet-name>
+    <url-pattern>/updateUserAddress</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>RemoveUserServlet</servlet-name>
+    <servlet-class>com.gmail.jahont.pavel.app.controller.RemoveUserServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RemoveUserServlet</servlet-name>
+    <url-pattern>/removeUser</url-pattern>
+  </servlet-mapping>
+
 </web-app>
